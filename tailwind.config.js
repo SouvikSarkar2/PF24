@@ -12,6 +12,13 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        cerlions: ["var(--font-cerlions)"],
+        ageya: ["var(--font-ageya)"],
+        canopee: ["var(--font-canopee)"],
+        confillia: ["var(--font-confillia)"],
+        dahlia: ["var(--font-dahlia)"],
+      },
     },
   },
   plugins: [],

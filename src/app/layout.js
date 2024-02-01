@@ -1,7 +1,53 @@
-import { Inter } from "next/font/google";
+import { Inter, Poor_Story } from "next/font/google";
 import "./globals.css";
+import localfont from "next/font/local";
 
+const poorStory = Poor_Story({ subsets: ["latin"], weight: "400" });
 const inter = Inter({ subsets: ["latin"] });
+const cerlions = localfont({
+  src: [
+    {
+      path: "../fonts/Cerlions-Regular.otf",
+    },
+  ],
+  variable: "--font-cerlions",
+});
+
+const ageya = localfont({
+  src: [
+    {
+      path: "../fonts/Ageya.otf",
+    },
+  ],
+  variable: "--font-ageya",
+});
+
+const canopee = localfont({
+  src: [
+    {
+      path: "../fonts/Canopee Regular.otf",
+    },
+  ],
+  variable: "--font-canopee",
+});
+
+const confillia = localfont({
+  src: [
+    {
+      path: "../fonts/ConfilliaBold.otf",
+    },
+  ],
+  variable: "--font-confillia",
+});
+
+const dahlia = localfont({
+  src: [
+    {
+      path: "../fonts/dahlia-regular.otf",
+    },
+  ],
+  variable: "--font-dahlia",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +57,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${cerlions.variable} ${ageya.variable} ${canopee.variable} ${confillia.variable} ${dahlia.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
