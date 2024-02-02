@@ -11,9 +11,9 @@ function Preloader() {
   const digitRef = useRef(null);
   const loader1Ref = useRef(null);
   const loader2Ref = useRef(null);
+
   const loaderRef = useRef(null);
   const loadingScreenRef = useRef(null);
-  const h1Ref = useRef(null);
 
   useGSAP(() => {
     const counter3 = counter3Ref.current;
@@ -47,14 +47,14 @@ function Preloader() {
 
     animate(counter3, 5);
     animate(counter2Ref.current, 6);
-    animate(counter1Ref.current, 2, 4);
+    animate(counter1Ref.current, 2, 3.6);
 
     gsap.to(digitRef.current, {
       top: "-150px",
       stagger: {
         amount: 0.25,
       },
-      delay: 6,
+      delay: 5,
       duration: 1,
       ease: "power4.inOut",
     });
@@ -117,28 +117,10 @@ function Preloader() {
       delay: 7.5,
       ease: "power1.inOut",
     });
-
-    gsap.to(h1Ref.current, 1.5, {
-      delay: 7,
-      y: -80,
-      ease: "power4.inOut",
-      stagger: {
-        amount: 0.1,
-      },
-    });
   }, []);
 
   return (
     <>
-      <div className="website-content">
-        <div className="header">
-          <div className="h1" ref={h1Ref}>
-            <h1>Website</h1>
-            <h1>Content</h1>
-          </div>
-          <div className="header-revealer"></div>
-        </div>
-      </div>
       <div className="loading-screen" ref={loadingScreenRef}>
         <div className="loader" ref={loaderRef}>
           <div className="loader-1 bar" ref={loader1Ref}></div>
