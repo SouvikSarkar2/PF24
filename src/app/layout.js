@@ -1,6 +1,7 @@
 import { Inter, Poor_Story } from "next/font/google";
 import "./globals.css";
 import localfont from "next/font/local";
+import Navbar from "@/components/Navbar/Navbar";
 
 const poorStory = Poor_Story({ subsets: ["latin"], weight: "400" });
 const inter = Inter({ subsets: ["latin"] });
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${cerlions.variable} ${ageya.variable} ${canopee.variable} ${confillia.variable} ${dahlia.variable}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

@@ -11,8 +11,8 @@ const Page = () => {
   return (
     <>
       <Preloader />
-      <Header ref={stickyElement} />
-      <StickyCursor stickyElement={stickyElement} />
+      {/*  <Header ref={stickyElement} /> */}
+      {/* <StickyCursor stickyElement={stickyElement} /> */}
       <Hero />
     </>
   );

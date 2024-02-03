@@ -1,0 +1,263 @@
+:root {
+  --bg: #e5e3dc;
+  --link-color: #e2e2dc;
+  --overlay-bg: #0a0a0a;
+}
+
+body {
+  overflow: hidden;
+}
+
+h1 .hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10vw;
+  font-weight: 400;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+svg path {
+  fill: var(--overlay-bg);
+}
+
+#toggle-btn {
+  position: absolute;
+  top: 25px;
+  left: 90vw;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.btn-outline {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--overlay-bg);
+}
+
+.btn-outline-1 {
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  animation: morph 4s linear infinite;
+}
+
+.btn-outline-2 {
+  border-radius: 53% 47% 43% 57%/51% 39% 61% 49%;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+#hamburger {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+
+#hamburger span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 24px;
+  height: 1.25px;
+  background: var(--overlay-bg);
+  transition: transform 0.25s;
+}
+
+#hamburger span::before {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 1.25px;
+  background: var(--overlay-bg);
+  transform: translateY(-4px);
+  transition: transform 0.25s;
+}
+
+#hamburger .active span {
+  transform: rotate(45deg);
+}
+
+#hamburger .active span::before {
+  top: unset;
+  width: 24px;
+  transform: rotate(-90deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.menu > div {
+  height: 100%;
+  display: flex;
+}
+
+.menu a {
+  position: relative;
+  top: 120px;
+  line-height: 70%;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.menu a span {
+  font-size: 20px;
+  margin-right: 2em;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.main-item {
+  position: relative;
+}
+
+.main-item::before {
+  content: "";
+  position: absolute;
+  margin-bottom: 25px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Change to the color you want */
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.main-item:hover::before {
+  width: 100%;
+  z-index: 1;
+}
+
+.main-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Change to the color you want */
+  bottom: 0;
+  right: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.main-item:hover::after {
+  width: 100%;
+}
+
+.main-item::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-item:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  width: 120%;
+  height: 200%;
+  background: var(--overlay-bg);
+  margin: 0 auto;
+}
+
+.menu-container {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.primary-menu {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-menu .menu-container .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.primary-menu a {
+  text-transform: uppercase;
+  font-size: 125px;
+  font-weight: 500;
+}
+
+.secondary-menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+
+.secondary-menu .menu-item a {
+  font-size: 36px;
+}
+
+.secondary-menu .menu-container .wrapper:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.primary-menu .menu-container .wrapper .menu-item:nth-child(1) a {
+  margin-left: 0em;
+}
+.primary-menu .menu-container .wrapper .menu-item:nth-child(2) a {
+  margin-left: 0.33em;
+}
+.primary-menu .menu-container .wrapper .menu-item:nth-child(3) a {
+  margin-left: 0.66em;
+}
+
+.primary-menu .menu-container .wrapper .menu-item:nth-child(4) a {
+  margin-left: 1em;
+}
