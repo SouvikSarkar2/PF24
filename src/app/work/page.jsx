@@ -1,5 +1,11 @@
+import FeaturedWork from "@/components/FeaturedWork/FeaturedWork";
+
 const page = () => {
-  return <div>Work</div>;
+  return (
+    <div>
+      <FeaturedWork />
+    </div>
+  );
 };
 
 export default page;

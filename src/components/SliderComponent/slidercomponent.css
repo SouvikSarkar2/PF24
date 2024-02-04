@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  height: 100vh;
+  width: 100vw;
+  background-color: #101010;
+  color: #fedbc5;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  transform: rotate(-3deg);
+}
+
+.slider .item .img {
+  position: absolute;
+  width: 800px;
+  height: 450px;
+}
+
+.slider .item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.slider .item .content {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.slider .item .content .wrap {
+  font-weight: 300;
+  letter-spacing: -10px;
+  text-align: center;
+  max-width: 900px;
+  text-shadow: 10px 10px #a4512a;
+  position: absolute;
+  top: 0;
+}
+
+.slider .item .content .wrap .letter {
+  display: inline-block;
+}
+
+.slider .nav .next,
+.slider .nav .prev {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: calc(50% - 1rem);
+  stroke: #a89a54;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider .nav .next {
+  right: 4rem;
+  transform: scale(2) rotate(180deg);
+}
+
+.slider .nav .prev {
+  left: 4rem;
+  transform: scale(2);
+}
+
+.slider .item:not(.is-active) {
+  opacity: 0;
+  pointer-events: none;
+}

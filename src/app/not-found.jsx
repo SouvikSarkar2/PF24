@@ -36,7 +36,7 @@ const NotFoundPage = () => {
   }, []);
 
   return (
-    <div className="container absolute">
+    <div className="container absolute bg-[#E4E4DF]">
       <div className="header-container">
         <div className="header font-canopee">
           <span>4</span>
@@ -47,8 +47,9 @@ const NotFoundPage = () => {
 
       <div className="footer font-mono text-xl">
         <span>
-          Seems you are lost, come back{" "}
-          <Link className=" z-10 cursor-pointer" href={"/"}>
+          Seems you are lost go
+          <Link href="/" className="font-bold">
+            {" "}
             Home
           </Link>
         </span>

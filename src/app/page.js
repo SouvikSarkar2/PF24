@@ -10,9 +10,9 @@ const Page = () => {
   const stickyElement = useRef(null);
   return (
     <>
-      <Preloader />
-      {/*  <Header ref={stickyElement} /> */}
-      {/* <StickyCursor stickyElement={stickyElement} /> */}
+      {/*  <Preloader /> */}
+      {/*  <Header ref={stickyElement} />
+      <StickyCursor stickyElement={stickyElement} /> */}
       <Hero />
     </>
   );

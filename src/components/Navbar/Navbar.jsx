@@ -138,7 +138,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="absolute left-0 top-0 z-20 font-[Oswald]">
+    <div className="absolute left-0 top-0 font-[Oswald] z-50">
       <div className="btn" id="toggle-btn" ref={toggleBtnRef}>
         <div className="btn-outline btn-outline-1"></div>
         <div className="btn-outline btn-outline-2"></div>
@@ -147,9 +147,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="overlay">
+      <div className="overlay ">
         <svg viewBox="0 0 1000 1000">
-          <path ref={pathRef} d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+          <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z" ref={pathRef}></path>
         </svg>
       </div>
       <div className="menu" ref={menuRef}>

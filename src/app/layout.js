@@ -62,6 +62,7 @@ export default function RootLayout({ children }) {
         className={`${cerlions.variable} ${ageya.variable} ${canopee.variable} ${confillia.variable} ${dahlia.variable}`}
       >
         <Navbar />
+
         {children}
       </body>
     </html>

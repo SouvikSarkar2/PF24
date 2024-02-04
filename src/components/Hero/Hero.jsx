@@ -15,8 +15,8 @@ const Hero = () => {
     const text = new SplitType(textRef.current);
     const description = new SplitType(descRef.current);
 
-    const tl = gsap.timeline();
-    const t2 = gsap.timeline();
+    const tl = gsap.timeline({ repeat: 0 });
+    const t2 = gsap.timeline({ repeat: 0 });
     tl.to(textRef.current, { opacity: 1 });
     t2.to(descRef.current, { opacity: 1 });
 
@@ -44,12 +44,12 @@ const Hero = () => {
 
     gsap.from(".img", {
       opacity: 0,
-      delay: 8,
+      delay: 9,
     });
     gsap.to(".img", {
       opacity: 1,
-      duration: 2,
-      delay: 8,
+      duration: 10,
+      delay: 9,
     });
   }, []);
 
@@ -59,7 +59,7 @@ const Hero = () => {
         <h1
           id="my-text"
           ref={textRef}
-          className="text-7xl uppercase overflow-hidden whitespace-nowrap opacity-0 z-10"
+          className="text-7xl font-bold uppercase overflow-hidden whitespace-nowrap opacity-0 z-10"
         >
           Hi I&apos;M
           <br />
@@ -72,21 +72,19 @@ const Hero = () => {
       >
         Fullstack Web Developer and Designer
       </p>
+
       <div
-        className="h-[1000px] w-[1500px] absolute left-[-15%] top-[-10%]"
+        className="h-[1000px] w-[1500px] absolute left-[-15%] top-[-10%] img"
         ref={imgRef}
       >
         <Image
           src={"./hero.svg"}
           fill
           alt="circle"
-          className="overflow-visible img"
+          className="overflow-visible"
         />
       </div>
-      <div
-        className="h-[1000px] w-[1500px] absolute left-[-25%] top-[-20%]"
-        ref={imgRef}
-      >
+      <div className="h-[1000px] w-[1500px] absolute left-[-25%] top-[-20%] img ">
         <Image
           src={"./hero2.svg"}
           fill
