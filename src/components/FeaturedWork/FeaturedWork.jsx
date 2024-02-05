@@ -5,6 +5,7 @@ import gsap from "gsap";
 import "./work.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { revalidatePath } from "next/cache";
 
 const FeaturedWork = () => {
   const containerRef = useRef(null);
@@ -88,7 +89,9 @@ const FeaturedWork = () => {
         >
           <div className="word w1 ">Hikari</div>
           <div className="img">
-            <img
+            <Image
+              width={125}
+              height={80}
               src="https://plus.unsplash.com/premium_photo-1673480195911-3075a87738b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dXJsfGVufDB8fDB8fHww"
               alt="hikari"
             />
@@ -97,10 +100,20 @@ const FeaturedWork = () => {
         </div>
 
         {/* Item 2 */}
-        <div className="item item-2 font-canopee">
+        <div
+          className="item item-2 font-canopee"
+          onClick={() => {
+            router.push("/work/2");
+            setTimeout(() => {
+              router.refresh("/work/2");
+            }, 200);
+          }}
+        >
           <div className="word w1">Shiken</div>
           <div className="img">
-            <img
+            <Image
+              width={125}
+              height={80}
               src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHVybHxlbnwwfHwwfHx8MA%3D%3D"
               alt="shiken"
             />
@@ -109,7 +122,10 @@ const FeaturedWork = () => {
         </div>
 
         {/* Item 3 */}
-        <div className="item item-3 font-confillia">
+        <div
+          className="item item-3 font-confillia"
+          onClick={() => router.push("/work/3")}
+        >
           <div className="word w1">Ibento</div>
           <div className="img">
             <Image
