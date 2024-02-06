@@ -111,7 +111,7 @@ function Contact() {
         <div className="nav"></div>
         <div className="header">
           <div className="header-text" ref={sendHeaderRef}>
-            <h1>Contact</h1>
+            <h1 className=" font-dahlia">Contact</h1>
           </div>
           <div className="cta">
             {/* Apply now button */}
@@ -130,7 +130,7 @@ function Contact() {
       <div className="overlays" ref={overlayRef}>
         <div className="col">
           <div className="logo">
-            <a href="#">La nova</a>
+            <a href="#">Contact</a>
           </div>
           <div className="form">
             <form action="">
@@ -152,16 +152,16 @@ function Contact() {
               />
               <br />
               <br />
-              <label htmlFor="fname">Website*</label>
+              <label htmlFor="fname">Project*</label>
               <input type="text" id="website" name="website" placeholder="" />
               <br />
               <br />
-              <label htmlFor="jobs">Disciplines</label>
+              <label htmlFor="jobs">Extras</label>
               <div className="jobs">
                 <div className="job-items">
                   <div className="item">
                     <input type="checkbox" />
-                    <label htmlFor="">Digital Design</label>
+                    <label htmlFor="">Animation</label>
                   </div>
                 </div>
               </div>

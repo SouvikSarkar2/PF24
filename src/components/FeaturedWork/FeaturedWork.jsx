@@ -89,12 +89,7 @@ const FeaturedWork = () => {
         >
           <div className="word w1 ">Hikari</div>
           <div className="img">
-            <Image
-              width={125}
-              height={80}
-              src="https://plus.unsplash.com/premium_photo-1673480195911-3075a87738b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dXJsfGVufDB8fDB8fHww"
-              alt="hikari"
-            />
+            <Image width={125} height={80} src="/sc1.png" alt="hikari" />
           </div>
           <div className="word w2"> A Todo App</div>
         </div>
@@ -108,12 +103,7 @@ const FeaturedWork = () => {
         >
           <div className="word w1">Shiken</div>
           <div className="img">
-            <Image
-              width={125}
-              height={80}
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHVybHxlbnwwfHwwfHx8MA%3D%3D"
-              alt="shiken"
-            />
+            <Image width={125} height={80} src="/ss1.png" alt="shiken" />
           </div>
           <div className="word w2"> A Quiz App</div>
         </div>
