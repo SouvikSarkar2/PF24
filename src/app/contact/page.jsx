@@ -1,5 +1,11 @@
+import Contact from "@/components/Contact/Contact";
+
 const page = () => {
-  return <div className="hover:text-white text-7xl">contact</div>;
+  return (
+    <div>
+      <Contact />
+    </div>
+  );
 };
 
 export default page;

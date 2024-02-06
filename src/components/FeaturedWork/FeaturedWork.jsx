@@ -104,9 +104,6 @@ const FeaturedWork = () => {
           className="item item-2 font-canopee"
           onClick={() => {
             router.push("/work/2");
-            setTimeout(() => {
-              router.refresh("/work/2");
-            }, 200);
           }}
         >
           <div className="word w1">Shiken</div>

@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import "./scrollslider.css";
 import { ArrowBigLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const ScrollSlider = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -188,22 +189,22 @@ const ScrollSlider = () => {
 
         <div className="slider">
           <div className="slide z-[51]" id="slide-1">
-            <img src="/ss1.png" alt="" />
+            <Image src="/ss1.png" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-2">
-            <img src="/ss2.png" alt="" />
+            <Image src="/ss2.png" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-3">
-            <img src="/ss3.png" alt="" />
+            <Image src="/ss3.png" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-4">
-            <img src="/ss4.png" alt="" />
+            <Image src="/ss4.png" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-5">
-            <img src="/ss5.png" alt="" />
+            <Image src="/ss5.png" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-6">
-            <img src="/ss6.png" alt="" />
+            <Image src="/ss6.png" alt="" fill />
           </div>
           <div style={{ height: "400vh" }}></div>
         </div>
