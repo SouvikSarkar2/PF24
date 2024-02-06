@@ -89,7 +89,7 @@ const FeaturedWork = () => {
         >
           <div className="word w1 ">Hikari</div>
           <div className="img">
-            <Image width={125} height={80} src="/sc1.png" alt="hikari" />
+            <Image width={125} height={80} src="/sc1.webp" alt="hikari" />
           </div>
           <div className="word w2"> A Todo App</div>
         </div>
@@ -103,7 +103,7 @@ const FeaturedWork = () => {
         >
           <div className="word w1">Shiken</div>
           <div className="img">
-            <Image width={125} height={80} src="/ss1.png" alt="shiken" />
+            <Image width={125} height={80} src="/ss1.webp" alt="shiken" />
           </div>
           <div className="word w2"> A Quiz App</div>
         </div>
