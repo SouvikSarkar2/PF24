@@ -189,22 +189,22 @@ const ScrollSlider = () => {
 
         <div className="slider">
           <div className="slide z-[51]" id="slide-1">
-            <Image src="/ss1.png" alt="" fill />
+            <Image src="/ss1.webp" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-2">
-            <Image src="/ss2.png" alt="" fill />
+            <Image src="/ss2.webp" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-3">
-            <Image src="/ss3.png" alt="" fill />
+            <Image src="/ss3.webp" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-4">
-            <Image src="/ss4.png" alt="" fill />
+            <Image src="/ss4.webp" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-5">
-            <Image src="/ss5.png" alt="" fill />
+            <Image src="/ss5.webp" alt="" fill />
           </div>
           <div className="slide z-[51]" id="slide-6">
-            <Image src="/ss6.png" alt="" fill />
+            <Image src="/ss6.webp" alt="" fill />
           </div>
           <div style={{ height: "400vh" }}></div>
         </div>

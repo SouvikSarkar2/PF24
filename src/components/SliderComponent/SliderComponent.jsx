@@ -176,7 +176,7 @@ const SliderComponent = () => {
           </div>
           <div className="img-wrapper">
             <div className="img">
-              <Image src={"/sc1.png"} fill alt="sc1" />
+              <Image src={"/sc1.webp"} fill alt="sc1" />
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@ const SliderComponent = () => {
           </div>
           <div className="img-wrapper">
             <div className="img">
-              <Image src={"/sc2.png"} fill alt="sc2" />
+              <Image src={"/sc2.webp"} fill alt="sc2" />
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@ const SliderComponent = () => {
           </div>
           <div className="img-wrapper">
             <div className="img">
-              <Image src={"/sc3.png"} fill alt="sc3" />
+              <Image src={"/sc3.webp"} fill alt="sc3" />
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ const SliderComponent = () => {
           </div>
           <div className="img-wrapper">
             <div className="img">
-              <Image src={"/sc4.png"} fill alt="sc4" />
+              <Image src={"/sc4.webp"} fill alt="sc4" />
             </div>
           </div>
         </div>
