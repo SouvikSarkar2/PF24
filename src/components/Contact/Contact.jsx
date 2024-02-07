@@ -175,12 +175,12 @@ function Contact() {
           </div>
           <div className="about">
             <p>
-              "Hello everyone, I'm Souvik Sarkar, a software developer and
-              designer. I'm passionate about creating intuitive solutions
+              &quot;Hello everyone, I am Souvik Sarkar, a software developer and
+              designer. I am passionate about creating intuitive solutions
               through a blend of development and design principles. With a
               collaborative mindset, I thrive on tackling diverse projects and
               making a positive impact through technology. Thank you for your
-              time."
+              time.&quot;
             </p>
           </div>
           <div className="send">
