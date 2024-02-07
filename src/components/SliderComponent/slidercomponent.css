@@ -80,6 +80,7 @@
 .slider .nav .next {
   right: 4rem;
   transform: scale(2) rotate(180deg);
+  z-index: 100;
 }
 
 .slider .nav .prev {
