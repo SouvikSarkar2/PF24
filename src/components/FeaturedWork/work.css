@@ -64,3 +64,8 @@ img {
 .w1 {
   text-align: right;
 }
+
+@media (max-width: 900px) {
+  .main {
+  }
+}

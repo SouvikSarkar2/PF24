@@ -28,7 +28,9 @@ const SkillsComponent = () => {
 
   return (
     <div className="bg-[#E4E4DF] font-bold font-confillia">
-      <div className="absolute top-10 left-[50%] text-7xl">Skills</div>
+      <div className="absolute top-10 sm:left-[50%] text-7xl left-2">
+        Skills
+      </div>
       <div className="flex w-[100vw] h-[100vh] container">
         <div className="img-names col">
           {imgNames.map((imgName) => (

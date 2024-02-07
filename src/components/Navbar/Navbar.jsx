@@ -147,15 +147,15 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="overlay ">
+      <div className="overlay">
         <svg viewBox="0 0 1000 1000">
           <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z" ref={pathRef}></path>
         </svg>
       </div>
       <div className="menu" ref={menuRef}>
         <div className="primary-menu">
-          <div className="menu-container">
-            <div className="wrapper">
+          <div className="menu-container ">
+            <div className="wrapper ">
               <div className="menu-item main-item mr-[240px]">
                 <Link
                   href="/"

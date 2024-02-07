@@ -53,12 +53,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <header className="h-screen w-screen flex justify-center items-center bg-[#E4E4DF] text-[#393632]">
-      <div className="w-[50%] text-[80px] flex flex-col justify-center font-bold font-cerlions">
+    <header className="h-screen w-screen flex sm:flex-row flex-col justify-center items-center bg-[#E4E4DF] text-[#393632]">
+      <div className="w-[100%] sm:w-[50%] text-[80px] flex flex-col justify-center font-bold font-cerlions">
         <h1
           id="my-text"
           ref={textRef}
-          className="text-7xl font-bold uppercase overflow-hidden whitespace-nowrap opacity-0 z-10"
+          className="p-5 text-5xl sm:text-7xl font-bold uppercase overflow-hidden whitespace-nowrap opacity-0 z-10"
         >
           Hi I&apos;M
           <br />
@@ -66,7 +66,7 @@ const Hero = () => {
         </h1>
       </div>
       <p
-        className="text-3xl font-[Oswald] desc overflow-hidden z-10"
+        className="p-5 w-[100%] sm:w-auto text-2xl sm:text-3xl font-[Oswald] desc overflow-hidden z-10 "
         ref={descRef}
       >
         Fullstack Web Developer and Designer
