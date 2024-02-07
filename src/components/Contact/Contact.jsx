@@ -70,6 +70,11 @@ function Contact() {
     toggleOverlay(); // Toggle the overlay
   };
 
+  const handleForm = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+  };
+
   useGSAP(() => {
     if (inView) {
       // Execute animation only when the component is in view
@@ -114,9 +119,8 @@ function Contact() {
             <h1 className=" font-dahlia">Contact</h1>
           </div>
           <div className="cta">
-            {/* Apply now button */}
             <button ref={toggleButtonRef} onClick={handleApplyNow}>
-              Apply now
+              Click
             </button>
           </div>
         </div>
@@ -126,14 +130,14 @@ function Contact() {
           <button>Twitter</button>
         </div>
       </section>
-      {/* Overlay */}
+
       <div className="overlays" ref={overlayRef}>
         <div className="col">
           <div className="logo">
             <a href="#">Contact</a>
           </div>
           <div className="form">
-            <form action="">
+            <form onSubmit={handleForm}>
               <label htmlFor="fname">Name*</label>
               <input
                 type="text"
@@ -156,22 +160,14 @@ function Contact() {
               <input type="text" id="website" name="website" placeholder="" />
               <br />
               <br />
-              <label htmlFor="jobs">Extras</label>
-              <div className="jobs">
-                <div className="job-items">
-                  <div className="item">
-                    <input type="checkbox" />
-                    <label htmlFor="">Animation</label>
-                  </div>
-                </div>
-              </div>
-              <button>Send Application</button>
+
+              <button type="sumbit">Send Application</button>
             </form>
           </div>
         </div>
         <div className="col">
           <div className="copy">
-            <p>[get featured]</p>
+            <p>[About me]</p>
             {/* Close button */}
             <p id="back" onClick={handleClose}>
               [back]
@@ -179,10 +175,12 @@ function Contact() {
           </div>
           <div className="about">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-              doloribus possimus ducimus distinctio quo iusto incidunt
-              blanditiis consequuntur! Ipsa magnam eveniet deleniti ipsum a
-              alias aspernatur expedita sapiente laboriosam rerum!
+              "Hello everyone, I'm Souvik Sarkar, a software developer and
+              designer. I'm passionate about creating intuitive solutions
+              through a blend of development and design principles. With a
+              collaborative mindset, I thrive on tackling diverse projects and
+              making a positive impact through technology. Thank you for your
+              time."
             </p>
           </div>
           <div className="send">

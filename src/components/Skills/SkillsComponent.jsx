@@ -7,12 +7,10 @@ const SkillsComponent = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const imgNames = [
-    { id: 1, name: "html", imgSrc: "/skills/1.webp" },
-    { id: 2, name: "css", imgSrc: "/skills/2.webp" },
     { id: 3, name: "javascript", imgSrc: "/skills/3.webp" },
     { id: 4, name: "typescript", imgSrc: "/skills/4.webp" },
     { id: 5, name: "react", imgSrc: "/skills/5.webp" },
-    { id: 6, name: "react-router", imgSrc: "/skills/6.svg" },
+    { id: 6, name: "zustand", imgSrc: "/skills/6.png" },
     { id: 7, name: "redux", imgSrc: "/skills/7.svg" },
     { id: 8, name: "react-query", imgSrc: "/skills/8.svg" },
     { id: 9, name: "next", imgSrc: "/skills/9.svg" },
@@ -22,6 +20,10 @@ const SkillsComponent = () => {
     { id: 13, name: "mysql", imgSrc: "/skills/13.svg" },
     { id: 14, name: "graphql", imgSrc: "/skills/14.webp" },
     { id: 15, name: "supabase", imgSrc: "/skills/15.webp" },
+    { id: 1, name: "framer motion", imgSrc: "/skills/1.svg" },
+    { id: 2, name: "gsap", imgSrc: "/skills/2.svg" },
+    { id: 15, name: "locomotive", imgSrc: "/skills/15.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
   ];
 
   return (

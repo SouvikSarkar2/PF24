@@ -208,7 +208,7 @@ const Navbar = () => {
                 <div className="menu-item-revealer"></div>
               </div>
               <div className="menu-item">
-                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
                 <div className="menu-item-revealer"></div>
               </div>
             </div>
