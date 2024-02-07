@@ -71,23 +71,6 @@ const Hero = () => {
       >
         Fullstack Web Developer and Designer
       </p>
-
-      <div className="h-[1000px] w-[1500px] absolute left-[-15%] top-[-10%] img">
-        {/*  <Image
-          src={"./hero.svg"}
-          fill
-          alt="circle"
-          className="overflow-visible"
-        /> */}
-      </div>
-      <div className="h-[1000px] w-[1500px] absolute left-[-25%] top-[-20%] img ">
-        {/* <Image
-          src={"./hero2.svg"}
-          fill
-          alt="circle"
-          className="overflow-visible img"
-        /> */}
-      </div>
     </header>
   );
 };
