@@ -180,11 +180,12 @@ svg path {
   content: "";
   position: absolute;
   top: 100px;
-  left: -20px;
-  width: 120%;
+  left: -80px;
+  width: 180%;
   height: 200%;
   background: var(--overlay-bg);
   margin: 0 auto;
+  /* background-color: rebeccapurple; */
 }
 
 .menu-container {
@@ -204,7 +205,8 @@ svg path {
 }
 
 .primary-menu .menu-container .wrapper {
-  width: 100%;
+  width: 90%;
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -259,17 +261,17 @@ svg path {
 
 @media (max-width: 900px) {
   .primary-menu .menu-container .wrapper .menu-item:nth-child(1) a {
-    margin-left: 0em;
+    margin-left: -2em;
   }
   .primary-menu .menu-container .wrapper .menu-item:nth-child(2) a {
-    margin-left: 0em;
+    margin-left: -1.8em;
   }
   .primary-menu .menu-container .wrapper .menu-item:nth-child(3) a {
-    margin-left: 0em;
+    margin-left: -1.9em;
   }
 
   .primary-menu .menu-container .wrapper .menu-item:nth-child(4) a {
-    margin-left: 0em;
+    margin-left: -2em;
   }
   .primary-menu a {
     font-size: 50px;
@@ -302,8 +304,8 @@ svg path {
 
   .btn-outline {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: 1px solid var(--overlay-bg);
   }
 
@@ -328,7 +330,7 @@ svg path {
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
-    width: 24px;
+    width: 14px;
     height: 1.25px;
     background: var(--overlay-bg);
     transition: transform 0.25s;
@@ -339,7 +341,7 @@ svg path {
     left: 0;
     display: inline-block;
     content: "";
-    width: 18px;
+    width: 10px;
     height: 1.25px;
     background: var(--overlay-bg);
     transform: translateY(-4px);

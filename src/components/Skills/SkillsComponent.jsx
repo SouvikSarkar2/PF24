@@ -1,11 +1,15 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import "./skills.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const SkillsComponent = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-
+  const router = useRouter();
+  useEffect(() => {
+    router.refresh("/skill");
+  }, []);
   const imgNames = [
     { id: 3, name: "javascript", imgSrc: "/skills/3.webp" },
     { id: 4, name: "typescript", imgSrc: "/skills/4.webp" },
