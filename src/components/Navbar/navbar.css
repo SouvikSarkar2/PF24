@@ -148,7 +148,7 @@ svg path {
   background-color: #ffffff; /* Change to the color you want */
   bottom: 0;
   left: 0;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .main-item:hover::before {
@@ -164,7 +164,7 @@ svg path {
   background-color: #ffffff; /* Change to the color you want */
   bottom: 0;
   right: 0;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .main-item:hover::after {
@@ -277,6 +277,58 @@ svg path {
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 500;
+  }
+
+  .main-item {
+    position: relative;
+  }
+
+  .main-item::before {
+    position: absolute;
+    margin-bottom: 25px;
+    width: 0;
+    height: 0px;
+    background-color: #ffffff; /* Change to the color you want */
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease-in-out;
+  }
+
+  .main-item:hover::before {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .main-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 10px;
+    background-color: #ffffff; /* Change to the color you want */
+    bottom: 0;
+    right: 0;
+    transition: none;
+  }
+
+  .main-item:hover::after {
+    width: -1%;
+  }
+
+  .main-item::after {
+    width: 0%;
+    transition: none;
+  }
+
+  .menu-item:after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: -80px;
+    width: 180%;
+    height: 200%;
+    background: var(--overlay-bg);
+    margin: 0 auto;
+    /* background-color: rebeccapurple; */
   }
 
   .overlay {
