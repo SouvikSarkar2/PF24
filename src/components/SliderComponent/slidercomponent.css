@@ -92,3 +92,52 @@
   opacity: 0;
   pointer-events: none;
 }
+
+@media (max-width: 700px) {
+  .slider .item .img {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+  }
+
+  .img-wrapper {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: rotate(-3deg);
+  }
+
+  .slider .item .content .wrap {
+    font-weight: 300;
+    letter-spacing: -10px;
+    font-size: 80px;
+    text-align: center;
+    width: 280px;
+    margin-top: 100px;
+    text-shadow: 10px 10px #a4512a;
+    position: absolute;
+    top: 0;
+  }
+
+  .slider .nav .next,
+  .slider .nav .prev {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: calc(100% - 20em);
+    stroke: #a89a54;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .slider .nav .next {
+    right: 4rem;
+    transform: scale(2) rotate(180deg);
+    z-index: 100;
+  }
+
+  .slider .nav .prev {
+    left: 4rem;
+    transform: scale(2);
+  }
+}

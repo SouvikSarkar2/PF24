@@ -138,7 +138,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="absolute left-0 top-0 font-[Oswald] z-50">
+    <div className="relative left-0 top-0 font-[Oswald] z-50">
       <div className="btn" id="toggle-btn" ref={toggleBtnRef}>
         <div className="btn-outline btn-outline-1"></div>
         <div className="btn-outline btn-outline-2"></div>

@@ -13,6 +13,8 @@
 .container .col {
   width: 50%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container .img-preview {
@@ -169,8 +171,8 @@
   .img-modal .img-view {
     top: 50%;
     left: 50%;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
   }
 
   .img-modal-name {
@@ -179,5 +181,22 @@
     left: unset;
     transform: translate(0, 0);
     margin: 1em;
+  }
+
+  .container .col {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: start;
+  }
+
+  .container .img-preview .img-preview-container {
+    width: 100px;
+    height: 160px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }

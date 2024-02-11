@@ -24,6 +24,11 @@ const SkillsComponent = () => {
     { id: 2, name: "gsap", imgSrc: "/skills/2.svg" },
     { id: 15, name: "locomotive", imgSrc: "/skills/15.png" },
     { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
   ];
 
   return (

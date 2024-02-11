@@ -65,7 +65,22 @@ img {
   text-align: right;
 }
 
-@media (max-width: 900px) {
-  .main {
+@media (max-width: 700px) {
+  .container .item {
+    width: 100%;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  img {
+    width: 125px;
+    object-fit: cover;
   }
 }

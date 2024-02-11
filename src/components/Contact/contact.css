@@ -198,7 +198,7 @@ input[type="text"] {
   }
 
   .overlay {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .col:nth-child(1) {
@@ -211,5 +211,31 @@ input[type="text"] {
 
   .send h1 {
     font-size: 150px;
+  }
+  .col:nth-child(1) {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    flex: none;
+    border-right: 1.5px solid #eae9e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 3em;
+  }
+
+  .col:nth-child(2) {
+    position: absolute;
+    width: 200%;
+    top: 10em;
+    flex: none;
+    padding: 0 1em;
+  }
+
+  #back {
+    cursor: pointer;
+    position: absolute;
+    right: 150vw;
   }
 }

@@ -138,26 +138,37 @@ function Contact() {
           </div>
           <div className="form">
             <form onSubmit={handleForm}>
-              <label htmlFor="fname">Name*</label>
+              <label className="mr-10" htmlFor="fname">
+                Name
+              </label>
               <input
                 type="text"
                 id="fname"
                 name="fname"
-                placeholder="first + surname"
+                placeholder="John Doe"
               />
               <br />
               <br />
-              <label htmlFor="location">Location*</label>
+              <label className="mr-10" htmlFor="location">
+                Location*
+              </label>
               <input
                 type="text"
                 id="location"
                 name="location"
-                placeholder="e.g. africa"
+                placeholder="USA"
               />
               <br />
               <br />
-              <label htmlFor="fname">Project*</label>
-              <input type="text" id="website" name="website" placeholder="" />
+              <label className="mr-10" htmlFor="fname">
+                Project
+              </label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                placeholder="Ecommerce"
+              />
               <br />
               <br />
 

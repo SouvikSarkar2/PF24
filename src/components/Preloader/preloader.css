@@ -72,14 +72,20 @@
   }
 
   .counter {
-    position: fixed;
-    left: 0;
+    position: absolute;
+    left: 2;
     bottom: 0;
     display: flex;
     height: 100px;
-    font-size: 100px;
+    font-size: 60px;
     line-height: 102px;
     clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
     font-weight: 400;
+    z-index: 100;
+  }
+
+  .num1offset1 {
+    position: relative;
+    right: -3px;
   }
 }

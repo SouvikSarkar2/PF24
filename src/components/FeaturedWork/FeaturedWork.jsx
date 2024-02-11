@@ -5,7 +5,6 @@ import gsap from "gsap";
 import "./work.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { revalidatePath } from "next/cache";
 
 const FeaturedWork = () => {
   const containerRef = useRef(null);
