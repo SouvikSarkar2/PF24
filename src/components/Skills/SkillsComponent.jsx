@@ -28,11 +28,11 @@ const SkillsComponent = () => {
     { id: 2, name: "gsap", imgSrc: "/skills/2.svg" },
     { id: 15, name: "locomotive", imgSrc: "/skills/15.png" },
     { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
-    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
-    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
-    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
-    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
-    { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 17, name: "electron", imgSrc: "/skills/17.png" },
+    { id: 18, name: "tauri", imgSrc: "/skills/18.svg" },
+    { id: 19, name: "jotai", imgSrc: "/skills/19.svg" },
+    /* { id: 16, name: "animejs", imgSrc: "/skills/16.png" },
+    { id: 16, name: "animejs", imgSrc: "/skills/16.png" }, */
   ];
 
   return (
